@@ -1,0 +1,221 @@
+【学会Git玩转Github----Github的使用】
+=====================================
+
+1.目的：
+	借助github托管项目代码
+	
+	
+2.基本概念
+	仓库（Repository）：用来存放项目代码，每个项目对应一个仓库，多个源项目对应对个仓库
+	收藏（Star）：仓库主页star按钮，收藏项目，方便下次查看。
+	复制克隆项目（Fork）：该fork的项目是独立存在的。
+	发起请求（pull request）
+	关注（Watch）：关注项目更新接受通知
+	事物卡片（Issue）：发现代码BUG，但是目前没用成型代码，需要讨论时用。
+	Github主页
+	个人主页
+	仓库主页
+	
+	
+3.注册github账号
+	官网网址： github.com
+		登录状态——点击logo——进入github主页
+		未登录状态--点击logo--进入github网址首页
+	点击sign up注册
+		pingfang23
+		247456899@qq.com （重要）
+		ping1314fang
+		注册完毕，进入github主页：https://github.com/dashboard
+	脚下留心
+		github在国外服务器所以访问慢或无法访问，需要翻墙.
+		只有仓库只能自己或指定朋友才有权限（收费）
+		新注册的用户必须邮箱验证后才能使用.
+	邮箱验证：QQ邮箱需要设置白名单才能收到邮箱
+		打开邮箱--设置--反垃圾--设置域名白名单--添加白名单（github.com）
+		邮箱验证
+
+		
+4.创建仓库/创建新项目
+	说明：一个git库对应一个开源库
+	创建项目（填写信息）：
+		仓库名称，一般情况即是项目名
+		项目描述，简单描述
+		勾选Public
+		勾选Initialize this repository with a README ，项目仓库下readme文件，详细描述
+		点击Create repository
+		创建成功： 	https://github.com/pingfang23/test
+
+	项目主页描述及按钮介绍：
+		可以点击edit，修改项目描述
+		Create new file 	创建文件
+		upload file			上传文件
+		Find file			搜索仓库文件
+		Unwatch				关注（Watch）
+		Star				收藏项目
+		Fork				复制克隆项目
+		Clone or download	直接下载或通过git克隆
+		issue				新建issue
+		pingfang23/test		用户名+仓库名（左上角）
+
+
+5.仓库管理
+	新建文件：
+		点击Create new file 
+			填写文件名（含后缀），书写文件内容，完善提交日志信息；
+			通过preview预览内容
+			点击Commit new file按钮，创建文件后自动跳转到仓库主页
+			主页可见，提交的内容，并提交次数+1，点击文件日志标题，可见修改内容.
+			
+	编辑文件：
+		点击文件名，到文件详情页可以做删除和修改动作【点击描述标题可以查看该文件提交详细信息】
+		点击笔（Edit this file）进入编辑模式，编辑玩完善描述--Commit
+		点击仓库名，回到仓库主页，发现交次数+1，可以点击进去查看提交记录.
+	
+	删除文件：
+		点击文件名，到文件详情页可以做删除和修改动作
+		点击垃圾桶（Delete this file），填写描述信息--Commit changes
+		注：被删除的文件如何查看日志： 点击Commits查看提交记录
+	
+	上传文件:
+		点击upload file
+		点击choose your files 或者将文件拖动到该区域上传（注：一次可上传多个）
+		填写描述信息
+		点击Commit changes
+
+	搜索仓库文件:
+		点击Find file输入文件名称进行塞选
+		多学一招：快捷键（t）
+
+	下载/检出项目:
+		点击 Clone or download----download ZIP下载即可
+		也可以通过git下载，Clone with HTTPS下的地址查看git地址： https://github.com/pingfang23/test.git
+
+	Github Issue
+		发现代码BUG，但是目前没用成型代码，需要讨论时用，或使用开源项目出现问题时使用.
+		情景：张三发现李四开源git库，提交了一个issue，李四隔天在github主页看到通知和张三交流，最好关闭issue.
+		点击issue ----点击New issue
+		填写标题和详细信息---Submit new issue
+		在个人主页会发现一个提醒bug信息（Recent activity），点击到仓库，发现Issues标记1
+		Issue处理：1.先回复bug提出人信息  2.关闭issue
+		到issue界面，可以查看Open和Close状态下的issue列表.. 
+	
+	
+6.基本概念实战
+	github主页		https://github.com	（点击小猫或网址）
+	个人主页		https://github.com/pingfang23
+	仓库主页		https://github.com/pingfang23/test
+	收藏			Star 
+	查看个人收藏	Your Stars
+	关注			Watch
+	复制克隆项目	Fork			fork仓库后，会自己生成一个一模一样的仓库（复制/克隆）
+	
+	发起请求		pull Request	点击New pull request 或者点击Pull request，发起一个更新请求
+					步骤 1.fork项目 2. 修改自己仓库的项目代码 3.新建pull request 4.等待作者合并审核
+
+
+
+
+
+
+
+【学会Git玩转Github----Git的安装和使用】
+=======================================					
+
+1.目的：
+	通过git管理github托管项目代码	
+
+
+2.下载安装：
+	git官网下载： https://www.git-scm.com/download/win
+	双击安装：
+		Next
+		选择安装的目录（D:\TOOLS\Git）Next
+		选择组件，勾线Git Bash Here（命令行） 和Git GUI Here（图形界面），默认Next
+		设置开始菜单的目录名称，默认Next
+		选择Use Git from Git Bash only （用git命令行模式）Next
+		一下三部都默认Next--Install 等待安装完成.
+	检验是否安装成功：
+		桌面右击鼠标，出现Git Bash Here 和Git GUI Here图标则安装oK.
+		
+		
+3.git基本工作流程
+	Git工作区域
+		工作区 					----添加，编辑，修改文件等动作
+		暂存区					----暂时已经修改的文件最后统一提交到git仓库中
+		git Repository 仓库 	----最终确定的文件保存到仓库，成为一个新的版本，并且对他人可见
+	
+	向仓库中添加文件流程
+		工作区 ----> 暂存区	：	git status;		git add hello.php
+		暂存区 ----> git仓库：	git status;		git commit -m "提交描述"; 	git status
+
+4.git仓库初始化及本地操作
+	设置基本信息：
+		设置用户名		git config --global user.name 'pingfang23'
+		设置用户名邮箱	git config --global user.email '247456899@qq.com'
+		查看设置		git config --list
+		脚下流程：该设置在github仓库主页显示谁提交了该文件
+	
+	初始化一个git仓库：
+		mkdir test
+		cd test
+		git init
+	
+	向仓库添加文件：
+		创建文件		touch a1.php
+		查看状态		git status			[Untracked files]
+		添加到暂存区	git add a1.php
+		查看状态		git status			[Changes to be committed]
+		提交到仓库		git commit -m "Add a1.php by liuping"
+		查看状态		git status			[nothing to commit]
+	
+	向仓库修改文件：
+		修改文件		vi a1.php 			[修改文件]
+		查看状态		git status			[modified:]
+		添加到暂存区	git add a1.php
+		查看状态		git status			[Changes to be committed]
+		提交到仓库		git commit -m "update a1.php by liuping"
+		查看状态		git status			[nothing to commit]
+	
+	删除仓库文件
+		删除工作区文件	rm -rf a1.php
+		删除git中文件	git rm a1.php
+		查看状态		git status			[deleted:]
+		提交操作		git commit -m "delete a1.php"
+
+		
+5.git管理远程仓库
+	使用远程仓库的目的和作用：
+		备份，实现代码共享集中化管理
+	
+	git克隆操作
+		目的：将远程仓库（github对应的项目）复制到本地
+		代码：git clone https://github.com/pingfang23/test.git
+	
+	提交代码到远程仓库：
+		cd test
+		vi a1.php
+		git add a1.php
+		git commit -m "second time add file"
+		git push
+	
+	问题：无法同步，或者没用权限（The requested URL returned error：403...）
+	解决：私有文件项目，没用权限，输入用户名密码 或者 修改远程地址类型.git/config
+			vi .git/config
+			#将
+			[remote "origin"]
+				url = https://github.com/pingfang23/test.git
+			#修改为：
+			[remote "origin"]
+				url = https://用户名:密码@github.com/pingfang23/test.git
+
+
+
+
+
+
+
+
+	
+	
+
+
